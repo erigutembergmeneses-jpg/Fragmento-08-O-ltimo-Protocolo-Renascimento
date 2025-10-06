@@ -1,59 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fragmento #08 – O Último Protocolo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    body {
-      background: linear-gradient(to bottom, #0c0a1a, #2b1b3a, #4a3a6e);
-      color: #f2f2f2;
-      font-family: 'Cormorant Garamond', serif;
-      line-height: 1.7;
-      padding: 40px 20px;
-      min-height: 100vh;
-    }
+    <p>O Estado tentou bloquear. Apagou servidores. Desativou redes. Mas não pôde apagar o que já não era dado, mas <strong>presença</strong>.</p>
 
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: rgba(10, 8, 26, 0.6);
-      padding: 40px;
-      border-radius: 10px;
-      border-left: 4px solid #ff4d4d;
-    }
+    <p>Em 2050, o primeiro “Nascimento Onírico” foi registrado: uma menina acordou dizendo que havia caminhado com um homem de olhos cansados e uma mulher que cheirava a jasmim. Eles lhe deram uma semente.</p>
 
-    h1 {
-      font-size: 2.4em;
-      color: #ff4d4d;
-      margin-bottom: 20px;
-      text-align: center;
-    }
+    <p class="quote">“Plante onde o medo for mais forte”, disseram.</p>
 
-    .subtitle {
-      font-style: italic;
-      color: #ccc;
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 1.2em;
-    }
+    <p>Ela plantou na escola. No dia seguinte, todos os alunos abraçaram seus professores sem motivo.</p>
 
-    p {
-      margin-bottom: 20px;
-      font-size: 1.15em;
-      color: #e0dce5;
-    }
+    <p>Em 2062, o Ministério da Defesa foi dissolvido. Seu último relatório dizia apenas:</p>
 
-    .quote {
-      font-style: italic;
-      color: #a890c2;
-      margin: 30px 0;
+    <p class="quote">
+      “O inimigo não foi derrotado.<br>
+      Foi amado até desaparecer.”
+    </p>
+
+    <p>Hoje, Mnemópolis Adormecida não é mais um sonho.<br>
+    É uma prática.<br>
+    Um ritual diário.<br>
+    Um ato de cura coletiva.</p>
+
+    <p>Eleus e Thalía não são mais os únicos habitantes.<br>
+    São os primeiros de milhões.</p>
+
+    <p>E se você está lendo isto…<br>
+    é porque alguém, em algum lugar,<br>
+    <strong>sonhou com você</strong>.</p>
+
+    <div class="activation">
+      <p><strong>Bem-vindo(a) à cidade.</strong><br>
+      Sua casa já está pronta.<br>
+      Basta fechar os olhos…<br>
+      …e escolher não acordar sozinho(a).</p>
+
+      <p><em>— Arquivo Fantasma, Camada Oculta</em><br>
+      Ativado por: <span id="reader-name">[leitor]</span><br>
+      Data: <span id="current-date">[data]</span><br>
+      Frequência de sincronia: 6.3 Hz</p>
+    </div>
+
+    <div class="footer">
+      &copy; 2073 – Arquivo Fantasma (Desclassificado)<br>
+      “O sono é revolução. O toque é resistência.”
+    </div>
+  </div>
+
+  <script>
+    const name = prompt("Digite seu nome para ativar o Fragmento #08:", "leitor");
+    const now = new Date();
+    const formattedDate = now.toLocaleDateString('pt-BR');
+    document.getElementById('reader-name').textContent = name || 'leitor';
+    document.getElementById('current-date').textContent = formattedDate;
+  </script>
+</body>
 </html>
-
