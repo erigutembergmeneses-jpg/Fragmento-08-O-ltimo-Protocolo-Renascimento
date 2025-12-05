@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fragmento #08 — Arquivo Fantasma</title>
   <style>
+    /* Reset & base */
     * {
       margin: 0;
       padding: 0;
@@ -12,52 +13,52 @@
     }
 
     body {
-      background-color: #0b0914; /* Noite neural — fundo característico */
-      color: #f3f0fa; /* Luz onírica suave */
-      font-family: 'Segoe UI', system-ui, -apple-system, 'SF Pro Display', sans-serif;
-      line-height: 1.75;
+      background-color: #090715; /* COR CARACTERÍSTICA — Noite neural profunda */
+      color: #f0edff; /* Luz onírica — branco suave, não clínico */
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+      line-height: 1.7;
       padding: 3rem 1.5rem;
       text-align: center;
-      font-size: 1.15rem;
+      font-size: 1.125rem;
     }
 
     .container {
-      max-width: 720px;
+      max-width: 700px;
       margin: 0 auto;
     }
 
     p {
-      margin-bottom: 1.4rem;
+      margin-bottom: 1.3rem;
     }
 
     strong {
-      color: #ff3a7d; /* Pulso de Eros — cor-sangue da resistência afetiva */
+      color: #ff3a7d; /* Pulso de Eros — cor do afeto não autorizado */
       font-weight: 600;
     }
 
     .quote {
       font-style: italic;
-      color: #a9d4ff; /* Memória fluida — voz do coletivo */
-      margin: 1.8rem 0;
-      font-size: 1.3rem;
-      line-height: 1.55;
-      padding: 0 1rem;
+      color: #b0d8ff; /* Memória coletiva — voz distante, mas clara */
+      margin: 1.6rem 0;
+      font-size: 1.25rem;
+      line-height: 1.5;
     }
 
     .activation {
-      margin-top: 2.8rem;
-      padding-top: 2rem;
-      border-top: 1px solid #2e2a3a;
+      margin-top: 2.5rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid #2a2638;
     }
 
     .footer {
-      margin-top: 3.2rem;
-      color: #7a748e; /* Arquivo com calor residual */
-      font-size: 0.95rem;
-      line-height: 1.7;
+      margin-top: 3rem;
+      color: #7e7890;
+      font-size: 0.9rem;
+      line-height: 1.6;
       font-style: italic;
     }
 
+    /* Responsive */
     @media (max-width: 600px) {
       body { padding: 2rem 1rem; }
       .quote { font-size: 1.15rem; }
@@ -112,7 +113,7 @@
   </div>
 
   <script>
-    // Ativação personalizada com nome e data
+    // Ativação personalizada
     const name = prompt("Digite seu nome para ativar o Fragmento #08:", "leitor");
     const now = new Date();
     const formattedDate = now.toLocaleDateString('pt-BR', {
